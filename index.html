@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Poppins|Roboto Mono"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="./assets/r.png"/>
+    <title>Rodrigo Fleitas - Portfolio Digitial</title>
+  </head>
+  <body>
+    <script>
+      function copiarAlPortapapeles() {
+        var aux = document.createElement("input");
+        aux.setAttribute(
+          "value",
+          'rfleitasarce@gmail.com'
+        );
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
+        document.body.removeChild(aux);
+        alert('Correo copiado al portapapeles')
+      }
+    </script>
+    <header>
+      <a href="#home" class="logo">Rodrigo Fleitas</a>
+      <ul>
+        <li><a href="#home" class="active">Inicio</a></li>
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </header>
+    <section id="home">
+      <div class="text-container">
+        <p>Hola, me llamo</p>
+        <p>Rodrigo Fleitas</p>
+        <p>y soy Full Stack Web Developer</p>
+        <button class="apt-btn"><a href="#contacto">Contacto</a></button>
+        <button class="down-cv">
+          <a
+            href="./assets/RodolfoFleitasArce_CV.pdf"
+            download="RodolfoFleitasArce_CV"
+            >Descargar CV</a
+          >
+        </button>
+      </div>
+      <img
+        src="./assets/IMG_20210108_184251 (1).jpg"
+        class="model"
+        alt="Rodrigo_Fleitas"
+      />
+    </section>
+    <div id="about" class="about-container">
+      <img src="./assets/i.jpg" />
+      <div class="about-text">
+        <p>Sobre mi</p>
+        <p>Full Stack Web Developer</p>
+        <p>
+          Hola mi nombre es Rodolfo Rodrigo Fleitas Arce y soy un desarrollador web
+          full stack. Me considero una persona apasionada, responsable y con
+          buena comunicación al trabajar en equipo, capaz de tomar decisiones y
+          aportar críticas constructivas para un trabajo correcto. <br />En
+          búsqueda de ampliar conocimientos y afrontar nuevos retos.
+          Especialización en tecnologías como Javascript, NodeJS y ReactJS.
+        </p>
+        <button>
+          <a
+            href="./assets/RodolfoFleitasArce_CV.pdf"
+            download="RodolfoFleitasArce_CV"
+            >Descargar CV</a
+          >
+        </button>
+      </div>
+    </div>
+    <div id="skills" class="skills">
+      <div class="skills-text">
+        <p>Habilidades</p>
+        <p>
+          Realice el Bootcamp de <a href="https://www.soyhenry.com/" target="_blank">Henry</a> con más de 700 Hs de programación en los lenguajes más populares en el ámbito del desarrollo web y mobile. Respecto a mis habilidades tengo un nivel intermedio de manejo de todas esas herramientas, apto para cualquier tipo de proyecto que se desee. <br> Las más importantes son el manejo de Javascript, NodeJS y ReactJS; además como pueden ver, tambien tengo conocimientos en HTML y CSS (Esta pagina solo esta construida con esos dos lenguajes)
+        </p>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <p>Javascript</p>
+          <img src="./assets/JS.png" alt="" />
+        </div>
+        <div class="box">
+          <p>NodeJS</p>
+          <img src="./assets/nodeJs.png" alt="" />
+        </div>
+        <div class="box">
+          <p>ReactJS</p>
+          <img src="./assets/reactJs.png" alt="" />
+        </div>
+        <div class="box">
+          <p>Redux</p>
+          <img src="./assets/redux.png" alt="" />
+        </div>
+      </div>
+      <button><a href="./assets/8f889655-9353-4606-98dd-9b246f576400.pdf" target="_blank">Ver Certificado de Graduacion</a></button>
+    </div>
+    <div id="contact" class="contact-container">
+      <div class="contact-text">
+        <p>Contacto</p>
+        <p>
+          Sientete libre de contactarme por el medio que mas te guste, ademas
+          los enlaces a mi perfil de Github y Linkedin. <br />Desde ya, muchas
+          gracias.
+        </p>
+        <p>- Rodolfo Rodrigo Fleitas Arce</p>
+      </div>
+      <div id="contacto" class="contact-box">
+        <div class="c-box-whatsapp">
+          <a href="whatsapp://send?text=Hola Rodrigo Fleitas Arce, me contacto desde tu pagina web y me gustaria charlar contigo.&phone=+542223506102&abid=+542223506102"><img class="c-box-img" src="./assets/whatsapp.png" /></a>
+        </div>
+        <div class="c-box-gmail">
+          <a onclick="copiarAlPortapapeles()"><img class="c-box-img" src="./assets/gmail.png" /></a>
+        </div>
+        <div class="c-box-linkedin">
+          <a href="https://www.linkedin.com/in/rodo-fleitas" target="_blank"><img class="c-box-img" src="./assets/linkedin.png" /></a>
+        </div>
+        <div class="c-box-github">
+          <a href="https://github.com/rodoFleitas" target="_blank"><img class="c-box-img" src="./assets/github.png" /></a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© 2021 Rodolfo Rodrigo Fleitas Arce.</p>
+    </footer>
+  </body>
+</html>
